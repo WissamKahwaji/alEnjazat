@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import BackgroundImage from "../../components/pages/about-us/BackgroundImage";
 import AboutContentItem from "../../components/pages/about-us/AboutContentItem";
