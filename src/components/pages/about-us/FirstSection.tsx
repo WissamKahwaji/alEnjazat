@@ -18,7 +18,7 @@ const FirstSection = (props: FirstSectionProps) => {
       ></div>
 
       <div className="relative ">
-        <div className="absolute bottom-1/2 md:bottom-1/2 lg:bottom-40 lg:left-1/2 transform lg:-translate-x-3/4 -translate-y-1/2 md:-translate-y-1/2   lg:-translate-y-1/2 lg:flex lg:flex-row lg:justify-start lg:items-start flex flex-col-reverse ">
+        <div className="absolute bottom-1/2 md:bottom-1/2 lg:bottom-40 lg:left-1/2 transform lg:-translate-x-3/4 -translate-y-1/4 md:-translate-y-1/2   lg:-translate-y-1/2 lg:flex lg:flex-row lg:justify-start lg:items-start flex flex-col-reverse ">
           <div className="text-center text-white mx-2 md:mx-8 lg:mx-0 ">
             <div className="bg-white px-2 py-2 lg:px-10 lg:py-10 shadow-md flex flex-col justify-start items-start rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
               <h2 className="text-base md:text-lg lg:text-xl font-semibold mb-2 text-subTitle text-gray-700">

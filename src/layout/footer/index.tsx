@@ -63,7 +63,7 @@ const Footer = () => {
     });
   };
   return (
-    <footer className="bg-hoverColor border-t-2 border-subTitle text-gray-200">
+    <footer className="bg-background border-t-2 border-subTitle text-hoverColor">
       <div className="max-w-7xl mx-auto p-6 md:p-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-10 md:gap-2">
           <div className="mb-8 flex flex-col md:justify-start justify-center w-full items-start md:items-start ">
@@ -77,7 +77,7 @@ const Footer = () => {
             {/* <h4 className="text-base md:text-xl lg:text-xl pb-3">
               VALOREM REAL ESTATE BROKERS
             </h4> */}
-            <p className="text-gray-200 text-sm md:text-base">
+            <p className="text-hoverColor text-sm md:text-base">
               UAE, Dubai Business Bay
               <br />
               <div
@@ -188,7 +188,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-gray-100 text-gray-500 px-6 py-4">
+      <div className="bg-gray-200 text-gray-500 px-6 py-4">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center">
           <div className="text-center sm:text-left mb-2 sm:mb-0">
             <div>

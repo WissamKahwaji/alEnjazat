@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import BackgroundImage from "../../components/pages/about-us/BackgroundImage";
+// import BackgroundImage from "../../components/pages/about-us/BackgroundImage";
 import AboutContentItem from "../../components/pages/about-us/AboutContentItem";
 import FirstSection from "../../components/pages/about-us/FirstSection";
 import { useGetAboutUsInfoQuery } from "../../apis/about-us/query";
@@ -45,17 +45,17 @@ const AboutUs = () => {
           ))}
         </div>
 
-        {/* <div
-          className={`w-full bg-no-repeat bg-cover  bg-fixed min-h-[400px] md:min-h-[550px]`}
+        <div
+          className={`w-full bg-no-repeat bg-cover  bg-fixed min-h-[300px] md:min-h-[700px]`}
           style={{
-            backgroundImage: `url(https://cloud.famproperties.com/project/large/al-habtoor-city-344694-143939.jpg)`,
+            backgroundImage: `url(https://fnst.axflare.com/blog/img/WEBP/pqzMaDQlhw.webp)`,
           }}
-        ></div> */}
+        ></div>
 
-        <BackgroundImage
+        {/* <BackgroundImage
           minHeight={"min-h-[300px] md:min-h-[700px]"}
           url="https://fnst.axflare.com/blog/img/WEBP/pqzMaDQlhw.webp"
-        />
+        /> */}
       </div>
     </motion.div>
   );
