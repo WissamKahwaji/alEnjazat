@@ -9,40 +9,30 @@ const HomeSlider = () => {
   const sliderImages = [
     {
       id: "65bca4dd1256fdab99f69627",
-      img: "https://i.imgur.com/Urn9Wv7.jpeg",
-      name: "Como Residences",
-      location: "Palm Jumeirah, Dubai – Nakheel",
+      img: "https://i.imgur.com/iBs8FuO.jpeg",
+      name: "Sobha One",
+      location: "Dubai – Ras Al Khor Road",
       description:
-        "Como Residences is a luxurious residential development situated on Palm Jumeirah",
-      price: "AED 21M",
+        "Sobha One spreads its tapestry over five interlinked towers. Rising from 30 stories tall and hitting a crescendo of 65 stories, it’s one note after another that sings in chorus with the skyline.",
+      price: "AED 20M",
     },
     {
       id: "65d0589f3cd97fbec9767f97",
-      img: "https://i.imgur.com/OcxHEvy.jpeg",
-      name: "Dubai Creek",
-      location: "Palm Jumeirah, Dubai – Nakheel",
+      img: "https://i.imgur.com/VzbsU73.jpeg",
+      name: "Sobha SeaHaven",
+      location: "Dubai – Palm Jumeirah",
       description:
-        "Elevate your urban lifestyle with Creek Views 3 Apartments By Azizi.\nDiscover luxurious waterfront living, contemporary residences, and a vibrant community in the heart of Dubai.",
-      price: "AED 1,381,000",
+        "The limited-edition units, by invitation only, are a masterpiece of design with breathtaking ocean views that will take your breath away. Come home to your private haven. Indulge in the ultimate luxury of waterfront living.",
+      price: "AED 21,000,000",
     },
     {
       id: "65d06c083cd97fbec9767f98",
-      img: "https://i.imgur.com/WdPTTxO.jpeg",
-      name: "Beachgate By Address",
+      img: "https://i.imgur.com/YPbyFNs.jpeg",
+      name: "Verde by Sobha",
       location: "Dubai Harbour",
       description:
         "Head home to Dubai’s most prestigious island, which is situated inside Dubai Harbour, the UAE’s newest marine hub. Emaar Beachfront is a beautifully constructed waterfront retreat that combines luxury coastal living with cosmopolitan living and a prominent location",
       price: "AED 2.97 M",
-    },
-    {
-      id: "65d093c51d6fcb0519ed1924",
-      img: "https://i.imgur.com/m3e2PYA.jpeg",
-      name: "Emaar Farm Gardens",
-      location: "The Valley, Dubai",
-      description:
-        "The Valley is primarily known for its investment communities for low-cost housing in the UAE. The neighbourhood is well renowned for its distinctive the med cluster apartments that give homeowners a top-notch opportunity to own a home.",
-
-      price: "AED 5,100,000",
     },
   ];
 

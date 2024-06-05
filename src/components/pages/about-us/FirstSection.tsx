@@ -13,7 +13,7 @@ const FirstSection = (props: FirstSectionProps) => {
       <div
         className={`w-full bg-no-repeat bg-cover  bg-fixed min-h-[400px] md:min-h-[550px]`}
         style={{
-          backgroundImage: `url(https://goldenbricks.ae/wp-content/uploads/2023/09/Exploring-the-Luxury-Real-Estate-Market-in-Dubai-A-Buyers-Perspective-Golden-Bricks-Real-Estate-01.jpg)`,
+          backgroundImage: `url(https://i.imgur.com/QH2Zr6a.jpeg)`,
         }}
       ></div>
 

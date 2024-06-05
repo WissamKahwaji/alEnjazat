@@ -46,7 +46,7 @@ const AboutUs = () => {
         </div>
 
         <div
-          className={`w-full bg-no-repeat bg-cover  bg-fixed min-h-[300px] md:min-h-[700px]`}
+          className={`hidden md:flex w-full bg-no-repeat bg-cover  bg-fixed min-h-[300px] md:min-h-[700px]`}
           style={{
             backgroundImage: `url(https://fnst.axflare.com/blog/img/WEBP/pqzMaDQlhw.webp)`,
           }}

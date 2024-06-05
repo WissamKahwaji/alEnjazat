@@ -1,17 +1,12 @@
 import React, { useState } from "react";
-import {
-  FaFacebookSquare,
-  FaInstagramSquare,
-  FaLinkedin,
-  FaWhatsappSquare,
-  FaYoutubeSquare,
-} from "react-icons/fa";
+
 import { Link } from "react-router-dom";
 
 // import baseUrl from "../../constants/domain";
 import { useGetContactUsInfo } from "../../apis/contact-us/query";
 import { useGetPropertiesInfoQuery } from "../../apis/properties/query";
 import logo from "../../assets/logo.png";
+import { FaFacebook, FaInstagram, FaSnapchat, FaTiktok } from "react-icons/fa6";
 
 const Footer = () => {
   const { data: contactUsInfo } = useGetContactUsInfo();
@@ -157,7 +152,7 @@ const Footer = () => {
           <div className="mb-8">
             <h4 className="pb-3 text-xl font-bold">Join Our Team</h4>
             <p className="text-gray-500 pb-2">
-              Join Our Al-Hobob Team, send your message
+              Join Our Al Azm Real Estate Team, send your message
             </p>
             <form onSubmit={handleSubmit} className="flex flex-col items-start">
               <input
@@ -194,7 +189,7 @@ const Footer = () => {
             <div>
               Copyright{" "}
               <strong>
-                <span>Al-Hobob</span>
+                <span>Al Azm Real Estate</span>
               </strong>{" "}
               company. All Rights Reserved
             </div>
@@ -206,36 +201,36 @@ const Footer = () => {
             </div>
           </div>
           <ul className="flex gap-2">
-            <li>
+            {/* <li>
               <Link
                 to={`https://wa.me/${contactUsInfo?.content.whatsApp}`}
                 target="_blank"
               >
-                <FaWhatsappSquare className="h-8 w-8" />
+                <FaWhatsapp className="h-8 w-8" />
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 to={contactUsInfo?.content.instagram ?? "/"}
                 target="_blank"
               >
-                <FaInstagramSquare className="h-8 w-8" />
+                <FaInstagram className="h-8 w-8" />
               </Link>
             </li>
             <li>
               <Link to={contactUsInfo?.content.faceBook ?? "/"} target="_blank">
-                <FaFacebookSquare className="h-8 w-8" />
+                <FaFacebook className="h-8 w-8" />
               </Link>
             </li>
 
             <li>
-              <Link to={contactUsInfo?.content.youtube ?? "/"} target="_blank">
-                <FaYoutubeSquare className="h-8 w-8" />
+              <Link to={contactUsInfo?.content.snapChat ?? "/"} target="_blank">
+                <FaSnapchat className="h-8 w-8" />
               </Link>
             </li>
             <li>
-              <Link to={contactUsInfo?.content.linkedIn ?? "/"} target="_blank">
-                <FaLinkedin className="h-8 w-8" />
+              <Link to={contactUsInfo?.content.tiktok ?? "/"} target="_blank">
+                <FaTiktok className="h-8 w-8" />
               </Link>
             </li>
           </ul>

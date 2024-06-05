@@ -21,7 +21,7 @@ const PropertyPage = () => {
       <HeaderSection
         img="https://eternallycreative.com/wp-content/uploads/2016/01/Dubai-from-the-Sky.jpg"
         title="OUR PROPERTIES"
-        description="Discover a haven of luxury and community at Al-Hobob Properties, where
+        description="Discover a haven of luxury and community at Al Azm Real Estate Properties, where
   meticulous design and lush greenery redefine urban living."
         bottom="bottom-0"
         top="top-0"

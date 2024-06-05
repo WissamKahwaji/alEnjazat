@@ -19,4 +19,5 @@ export type Content = {
   snapChat: string;
   longitude: number;
   latitude: number;
+  tiktok: string;
 };

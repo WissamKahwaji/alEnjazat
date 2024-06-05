@@ -99,7 +99,7 @@ const PropertyDetailsPage = () => {
         bottom="bottom-0"
         top="top-40"
       />
-      <div className="bg-primary py-8">
+      <div className="bg-seconBackground py-8">
         <div className="flex flex-col justify-center items-center md:flex-row lg:flex-row lg:justify-center space-y-6 md:space-y-0 md:space-x-16">
           {property?.breifDetails.map((item, index) => (
             <div
@@ -175,7 +175,7 @@ const PropertyDetailsPage = () => {
             </p>
           </div>
         </div>
-        {property?.connectivity && (
+        {property?.connectivity && property?.connectivity.length > 0 && (
           <div className="flex flex-col justify-start md:p-14">
             <p className="capitalize font-header text-3xl text-hoverColor font-semibold  md:mb-0">
               connectivity

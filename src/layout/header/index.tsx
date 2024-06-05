@@ -41,7 +41,7 @@ const Navbar = () => {
           {navItems.map((item, index) => (
             <Link
               className={`hover:text-hoverColor ${
-                item.path === currentPath ? "text-black" : "text-subTitle"
+                item.path === currentPath ? "text-black" : "text-gray-600"
               }`}
               key={index}
               to={item.path}
@@ -73,8 +73,8 @@ const Navbar = () => {
                     key={index}
                     href={item.path}
                     className={`${
-                      item.path === currentPath ? "text-black" : "text-subTitle"
-                    } hover:text-hoverColor transition duration-300 text-lg border-b-2 w-full border-b-secondary/20`}
+                      item.path === currentPath ? "text-black" : "text-gray-600"
+                    } hover:text-hoverColor font-header transition duration-300 text-lg border-b-2 w-full border-b-secondary/20`}
                   >
                     {item.title}
                   </a>

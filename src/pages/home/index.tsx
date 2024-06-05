@@ -38,7 +38,7 @@ const Home = () => {
 
       <BackgroundImage
         minHeight={"min-h-[300px] md:min-h-[700px]"}
-        url="https://thumbs.dreamstime.com/b/dubai-skyline-beautiful-city-close-to-s-busiest-highway-traffic-right-side-goes-abudabi-78032294.jpg"
+        url="https://i.imgur.com/WoGd4uU.jpeg"
       />
       <ContactFooter />
     </motion.div>
