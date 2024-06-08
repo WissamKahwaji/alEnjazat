@@ -1,7 +1,7 @@
 import { AiOutlineCloseSquare, AiOutlineMenu } from "react-icons/ai";
 
 import { Link, useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import logo from "../../assets/logo.png";
 
 const Navbar = () => {
@@ -19,17 +19,39 @@ const Navbar = () => {
   const toggleDrawer = () => {
     setShowDrawer(!showDrawer);
   };
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos]);
 
   return (
-    <header className="fixed left-0 top-0 z-[1001] w-full bg-background border-b border-border shadow-sm">
-      <nav className="flex flex-row md:items-center justify-around md:px-32 px-5 w-full py-2">
-        <div className="flex items-center justify-between w-full lg:w-auto md:w-auto lg:justify-start gap-x-8 md:space-x-0 md:justify-center">
-          <div className="text-2xl md:text-4xl font-bold text-hoverColor">
+    <header
+      className={`fixed left-0 top-0 z-[1001] w-full bg-background border-b border-border shadow-sm md:transition-transform md:duration-300 md:ease-in-out ${
+        visible ? "md:translate-y-0" : "md:-translate-y-full"
+      }`}
+    >
+      <nav className="md:h-[90px] flex flex-row md:items-center justify-around md:px-32 px-5 w-full py-2">
+        <div className=" flex items-center justify-between w-full lg:w-auto md:w-auto lg:justify-start gap-x-8 md:space-x-0 md:justify-center">
+          <div className="md:absolute md:-bottom-1/2 text-2xl md:text-4xl font-bold text-hoverColor">
             <Link to="/">
               <img
                 src={logo}
                 alt=""
-                className="h-auto w-16 sm:h-auto sm:w-24 md:h-auto md:w-24 lg:h-auto lg:w-20 object-cover"
+                className={`h-auto w-16 sm:h-auto sm:w-24 md:h-auto md:w-32 lg:h-auto lg:w-32 object-cover md:transition-transform md:ease-in-out md:duration-300 ${
+                  visible ? "md:translate-y-0" : "md:-translate-y-full"
+                }`}
               />
               {/* <p className="h-auto w-16 sm:h-auto sm:w-24 md:h-auto md:w-24 lg:h-auto lg:w-20 object-cover">
                 Logo

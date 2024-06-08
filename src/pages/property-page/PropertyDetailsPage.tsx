@@ -127,15 +127,31 @@ const PropertyDetailsPage = () => {
           </p>
         </div>
       </div>
-      {property?.paymentPlan && (
-        <div className="bg-primary py-6 md:py-10 px-6 md:px-12 lg:px-32">
+      {property?.paymentPlan && property?.paymentPlan.length > 0 && (
+        <div className="bg-gray-100 py-6 md:py-10 px-6 md:px-12 lg:px-32">
           <div className="text-center mb-6 md:mb-12">
             <h1 className="text-3xl md:text-5xl text-hoverColor  font-header uppercase mb-6 md:mb-10">
               payment plan
             </h1>
-            <p className="text-subTitle font-header text-start text-lg md:text-xl lg:text-2xl whitespace-pre-wrap">
+            {/* <p className="text-black font-serif font-semibold text-center  text-lg md:text-xl lg:text-2xl whitespace-pre-wrap">
               {property.paymentPlan}
-            </p>
+            </p> */}
+            <div className="grid md:grid-cols-2 grid-cols-2 mx-auto divide-x-2 divide-gray-700 gap-x-2">
+              {property.paymentPlan.map((item, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col py-6 md:pr-16 justify-center items-center"
+                >
+                  <p className="text-hoverColor font-bold font-header   mb-2 text-lg md:text-xl lg:text-2xl">
+                    {item.title}
+                  </p>
+                  <hr />
+                  <p className="text-black font-body  text-center md:text-left text-lg md:text-xl lg:text-2xl">
+                    {item.value}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       )}
@@ -163,7 +179,32 @@ const PropertyDetailsPage = () => {
           </div>
         </div>
       )}
-
+      {property?.qrInfo && (
+        <div className="bg-gray-300 py-6 md:py-10 px-6 md:px-12 lg:px-32">
+          <div className="text-center mb-6 md:mb-12">
+            <h1 className="text-3xl md:text-5xl text-hoverColor  font-header uppercase mb-6 md:mb-10">
+              Real Estate Permit Card
+            </h1>
+            <div className="flex flex-col space-y-3 justify-center items-center">
+              <img
+                src={property.qrInfo.image}
+                alt=""
+                className="md:w-[240px] md:h-auto w-3/4"
+              />
+              {property.qrInfo.listingNumber && (
+                <div className="flex flex-row gap-x-4 items-center">
+                  <h2 className="text-subTitle font-header text-start text-lg md:text-xl lg:text-2xl ">
+                    Listing Number :{" "}
+                  </h2>
+                  <p className="text-hoverColor font-header text-start text-lg md:text-xl lg:text-2xl">
+                    {property.qrInfo.listingNumber}
+                  </p>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
       <div className="grid grid-flow-row md:grid-cols-2 mx-4 md:mx-20 mb-48 md:mb-20 ">
         <div className="flex flex-col justify-start md:p-14 py-14">
           <p className="capitalize font-header text-3xl text-hoverColor font-semibold  md:mb-0">
@@ -232,14 +273,14 @@ const PropertyDetailsPage = () => {
                   autoPlay
                   removeArrowOnDeviceType={"xs"}
                   responsive={PROPERTY_TYPE_CAROUSAL_RESPONSIVE}
-                  className="w-full h-64 md:h-auto"
+                  className="w-full h-64 md:h-auto md:max-h-[400px]"
                 >
                   {content.imgs.map((img, imgIndex) => (
                     <img
                       key={imgIndex}
                       src={img}
                       alt={`  ${imgIndex}`}
-                      className="object-cover w-full h-full"
+                      className="object-contain w-full h-full"
                     />
                   ))}
                 </Carousel>
@@ -256,7 +297,7 @@ const PropertyDetailsPage = () => {
                         className="w-9 h-9 mr-3"
                       /> */}
                       <LiaAngleDoubleRightSolid className="w-6 h-6 mr-3 text-hoverColor" />
-                      <p className="text-sm font-body font-thin">
+                      <p className="text-sm font-body   font-semibold ">
                         {detail.title}
                       </p>
                     </div>

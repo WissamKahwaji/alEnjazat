@@ -16,7 +16,7 @@ function App() {
     <div className="bg-seconBackground">
       <Navbar />
 
-      <main className="mt-[79px] md:mt-[110px] lg:mt-[94px] xl:mt-[94px]">
+      <main className="mt-[79px] md:mt-[110px] lg:mt-[91px] xl:mt-[91px]">
         <Outlet />
         <WhatsAppButton number={"+971508889477"} />
         <BackToTopButton />

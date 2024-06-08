@@ -7,6 +7,7 @@ import { useGetContactUsInfo } from "../../apis/contact-us/query";
 import { useGetPropertiesInfoQuery } from "../../apis/properties/query";
 import logo from "../../assets/logo.png";
 import { FaFacebook, FaInstagram, FaSnapchat, FaTiktok } from "react-icons/fa6";
+import qrImg from "../../assets/qr-code.png";
 
 const Footer = () => {
   const { data: contactUsInfo } = useGetContactUsInfo();
@@ -59,8 +60,8 @@ const Footer = () => {
   };
   return (
     <footer className="bg-background border-t-2 border-subTitle text-hoverColor">
-      <div className="max-w-7xl mx-auto p-6 md:p-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-10 md:gap-2">
+      <div className="max-w-7xl mx-auto p-6 md:py-10 md:px-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-5 md:gap-5">
           <div className="mb-8 flex flex-col md:justify-start justify-center w-full items-start md:items-start ">
             <a href="/">
               <img
@@ -179,6 +180,13 @@ const Footer = () => {
                 Send Email
               </button>
             </form>
+          </div>
+          <div className="hidden md:flex flex-col items-center w-full justify-center">
+            <img
+              src={qrImg}
+              alt=""
+              className="md:w-full md:h-auto h-auto object-cover w-1/2"
+            />
           </div>
         </div>
       </div>

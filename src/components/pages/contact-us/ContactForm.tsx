@@ -52,8 +52,10 @@ const ContactForm = () => {
   return (
     <div className="flex flex-col gap-8 bg-gray-background px-3 lg:px-20 py-14 w-full bg-seconBackground">
       <div className="border border-primary p-4 md:p-6 lg:p-8 rounded-lg">
-        <h2 className="text-4xl font-semibold mb-4 font-header">Contact Us</h2>
-        <form onSubmit={handleSubmit}>
+        <h2 className="text-4xl font-semibold mb-4 font-header text-hoverColor">
+          Contact Us
+        </h2>
+        <form onSubmit={handleSubmit} className="text-hoverColor">
           <div className="flex flex-col mb-4">
             <label htmlFor="name" className="font-serif mb-1">
               Name
@@ -116,7 +118,7 @@ const ContactForm = () => {
           <div className="w-full items-center  flex">
             <button
               type="submit"
-              className="bg-hoverColor w-1/2 mx-auto text-white font-semibold py-2 px-4 rounded-md transition duration-300 hover:bg-primary/80 focus:outline-none focus:ring focus:ring-gray-700"
+              className="bg-primary w-1/2 mx-auto text-white font-semibold py-2 px-4 rounded-md transition duration-300 hover:bg-primary/80 focus:outline-none focus:ring focus:ring-gray-700"
             >
               Submit
             </button>

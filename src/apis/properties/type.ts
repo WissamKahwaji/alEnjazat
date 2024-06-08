@@ -21,6 +21,10 @@ export type PropertyInfo = {
       value: string;
     }
   ];
+  qrInfo?: {
+    image: string;
+    listingNumber?: string;
+  };
   locationDetails: string;
   connectivity: [
     {
@@ -28,7 +32,12 @@ export type PropertyInfo = {
       value: string;
     }
   ];
-  paymentPlan: string;
+  paymentPlan: [
+    {
+      title: string;
+      value: string;
+    }
+  ];
   floorPlan: string;
   masterPlan: string;
 };

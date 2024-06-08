@@ -68,8 +68,12 @@ const ContactFooter = () => {
         className="w-full h-full object-cover absolute top-0 left-0 z-0"
       /> */}
 
-      <div className="absolute top-0 left-0 w-full h-full bg-gray-500  z-1"></div>
-
+      <img
+        src="https://cloudfront-eu-central-1.images.arcpublishing.com/thenational/OV7G27MUUVAJTPPBZNLL2Y3FXQ.jpg"
+        alt="Background"
+        className="w-full h-full object-cover absolute top-0 left-0 z-0"
+      />
+      <div className="absolute top-0 left-0 w-full h-full opacity-80 bg-gray-500  z-1"></div>
       <div className="absolute top-0 left-0 w-full h-full z-1 flex flex-col items-center justify-center">
         <a href="/">
           <img
