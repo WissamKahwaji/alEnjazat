@@ -52,7 +52,7 @@ const ContactInfoSection = (props: ContactInfoSectionProps) => {
             </p>
           </li>
 
-          <li>
+          {/* <li>
             <p
               className=" flex items-center gap-2 font-semibold cursor-pointer w-max"
               onClick={() => {
@@ -62,7 +62,7 @@ const ContactInfoSection = (props: ContactInfoSectionProps) => {
               <FaPhone />
               <span>{props.mobile}</span>
             </p>
-          </li>
+          </li> */}
           <li>
             <p
               className="flex items-center gap-2 font-semibold cursor-pointer w-max"
@@ -115,7 +115,7 @@ const ContactInfoSection = (props: ContactInfoSectionProps) => {
         <img
           src={qrImg}
           alt=""
-          className="md:w-1/3 md:h-auto h-1/3 object-cover"
+          className="md:w-1/4 md:h-auto h-1/3 object-cover"
         />
       </div>
     </div>

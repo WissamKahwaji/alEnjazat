@@ -83,6 +83,7 @@ const Footer = () => {
                 }}
               >
                 <strong>Phone : </strong>
+                <br className="hidden md:flex" />
                 {contactUsInfo?.content.phoneNumber}
               </div>
               {/* <br /> */}
@@ -93,6 +94,7 @@ const Footer = () => {
                 }}
               >
                 <strong>Email : </strong>
+                <br className="hidden md:flex" />
                 {contactUsInfo?.content.email}
               </div>
             </p>
@@ -185,7 +187,7 @@ const Footer = () => {
             <img
               src={qrImg}
               alt=""
-              className="md:w-full md:h-auto h-auto object-cover w-1/2"
+              className="md:w-full md:h-[190px] md:mt-[65px] h-auto md:object-contain object-cover w-1/2"
             />
           </div>
         </div>
